@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF889D542B7F23E6003D27CE /* TextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF889D532B7F23E6003D27CE /* TextType.swift */; };
 		BF8B27B62B61D77C00B96435 /* MiniBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27B52B61D77C00B96435 /* MiniBoardApp.swift */; };
 		BF8B27B82B61D77C00B96435 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27B72B61D77C00B96435 /* ContentView.swift */; };
 		BF8B27BA2B61D77E00B96435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8B27B92B61D77E00B96435 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF889D532B7F23E6003D27CE /* TextType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextType.swift; sourceTree = "<group>"; };
 		BF8B27B22B61D77C00B96435 /* MiniBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8B27B52B61D77C00B96435 /* MiniBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBoardApp.swift; sourceTree = "<group>"; };
 		BF8B27B72B61D77C00B96435 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF889D522B7F22FE003D27CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF889D532B7F23E6003D27CE /* TextType.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BF8B27A92B61D77C00B96435 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8B27D02B62E4E300B96435 /* Components */,
+				BF889D522B7F22FE003D27CE /* Utils */,
 				BF8B27CD2B62386600B96435 /* View */,
 				BF8B27C62B62262800B96435 /* Model */,
 				BF8B27B52B61D77C00B96435 /* MiniBoardApp.swift */,
@@ -192,6 +203,7 @@
 				BF8B27D22B635A5A00B96435 /* ListItem.swift in Sources */,
 				BF8B27D62B65F48100B96435 /* CopiedItemView.swift in Sources */,
 				BF8B27B62B61D77C00B96435 /* MiniBoardApp.swift in Sources */,
+				BF889D542B7F23E6003D27CE /* TextType.swift in Sources */,
 				BF8B27C82B62264400B96435 /* ClipboardItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

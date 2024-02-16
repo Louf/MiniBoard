@@ -24,6 +24,7 @@ struct CopiedItemView: View {
         VStack(alignment: .leading) {
             if isImage {
                 if let img = item.image, let imageData = item.imageData  {
+                    Text(item.text)
                     Image(nsImage: img)
                         .resizable()                    // Make the image resizable
                         .aspectRatio(contentMode: .fit) // Preserve aspect ratio and fit within the frame

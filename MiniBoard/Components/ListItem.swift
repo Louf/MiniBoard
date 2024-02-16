@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListItem: View {
     let item: ClipboardItem
+    let identifier = TextTypeIdentifier()
     @State private var isHovered = false
     @State private var xmarkHovered = false
     
@@ -16,7 +17,11 @@ struct ListItem: View {
     
     var body: some View {
         HStack {
-            Text(item.text.trimmingCharacters(in: .whitespaces))
+            identifier.getIcon(for: item.text)
+                .resizable() // Make the icon resizable if needed
+                .scaledToFit() // Fit the icon within the given dimensions
+                .frame(width: 18, height: 18) // Specify the size of the icon
+            Text(item.text.trimmingCharacters(in: .whitespacesAndNewlines))
                 .lineLimit(1)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Spacer()
