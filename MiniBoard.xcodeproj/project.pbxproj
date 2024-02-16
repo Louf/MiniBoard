@@ -11,6 +11,13 @@
 		BF8B27B82B61D77C00B96435 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27B72B61D77C00B96435 /* ContentView.swift */; };
 		BF8B27BA2B61D77E00B96435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8B27B92B61D77E00B96435 /* Assets.xcassets */; };
 		BF8B27BD2B61D77E00B96435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8B27BC2B61D77E00B96435 /* Preview Assets.xcassets */; };
+		BF8B27C52B61E6D300B96435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27C42B61E6D300B96435 /* AppDelegate.swift */; };
+		BF8B27C82B62264400B96435 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27C72B62264400B96435 /* ClipboardItem.swift */; };
+		BF8B27CC2B6230A300B96435 /* KeyboardShortcutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27CB2B6230A300B96435 /* KeyboardShortcutHandler.swift */; };
+		BF8B27CF2B62386C00B96435 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27CE2B62386C00B96435 /* ListView.swift */; };
+		BF8B27D22B635A5A00B96435 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27D12B635A5A00B96435 /* ListItem.swift */; };
+		BF8B27D42B65EE4100B96435 /* FloatingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27D32B65EE4100B96435 /* FloatingWindow.swift */; };
+		BF8B27D62B65F48100B96435 /* CopiedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B27D52B65F48100B96435 /* CopiedItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		BF8B27B92B61D77E00B96435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8B27BC2B61D77E00B96435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8B27BE2B61D77E00B96435 /* MiniBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniBoard.entitlements; sourceTree = "<group>"; };
+		BF8B27C42B61E6D300B96435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF8B27C72B62264400B96435 /* ClipboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		BF8B27CB2B6230A300B96435 /* KeyboardShortcutHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutHandler.swift; sourceTree = "<group>"; };
+		BF8B27CE2B62386C00B96435 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BF8B27D12B635A5A00B96435 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		BF8B27D32B65EE4100B96435 /* FloatingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindow.swift; sourceTree = "<group>"; };
+		BF8B27D52B65F48100B96435 /* CopiedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopiedItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +66,16 @@
 		BF8B27B42B61D77C00B96435 /* MiniBoard */ = {
 			isa = PBXGroup;
 			children = (
+				BF8B27D02B62E4E300B96435 /* Components */,
+				BF8B27CD2B62386600B96435 /* View */,
+				BF8B27C62B62262800B96435 /* Model */,
 				BF8B27B52B61D77C00B96435 /* MiniBoardApp.swift */,
 				BF8B27B72B61D77C00B96435 /* ContentView.swift */,
 				BF8B27B92B61D77E00B96435 /* Assets.xcassets */,
 				BF8B27BE2B61D77E00B96435 /* MiniBoard.entitlements */,
 				BF8B27BB2B61D77E00B96435 /* Preview Content */,
+				BF8B27C42B61E6D300B96435 /* AppDelegate.swift */,
+				BF8B27CB2B6230A300B96435 /* KeyboardShortcutHandler.swift */,
 			);
 			path = MiniBoard;
 			sourceTree = "<group>";
@@ -67,6 +86,32 @@
 				BF8B27BC2B61D77E00B96435 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF8B27C62B62262800B96435 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B27C72B62264400B96435 /* ClipboardItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF8B27CD2B62386600B96435 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B27CE2B62386C00B96435 /* ListView.swift */,
+				BF8B27D52B65F48100B96435 /* CopiedItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8B27D02B62E4E300B96435 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B27D12B635A5A00B96435 /* ListItem.swift */,
+				BF8B27D32B65EE4100B96435 /* FloatingWindow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8B27D42B65EE4100B96435 /* FloatingWindow.swift in Sources */,
 				BF8B27B82B61D77C00B96435 /* ContentView.swift in Sources */,
+				BF8B27CC2B6230A300B96435 /* KeyboardShortcutHandler.swift in Sources */,
+				BF8B27C52B61E6D300B96435 /* AppDelegate.swift in Sources */,
+				BF8B27CF2B62386C00B96435 /* ListView.swift in Sources */,
+				BF8B27D22B635A5A00B96435 /* ListItem.swift in Sources */,
+				BF8B27D62B65F48100B96435 /* CopiedItemView.swift in Sources */,
 				BF8B27B62B61D77C00B96435 /* MiniBoardApp.swift in Sources */,
+				BF8B27C82B62264400B96435 /* ClipboardItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +331,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +359,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
