@@ -1,10 +1,3 @@
-//
-//  CopiedItemView.swift
-//  MiniBoard
-//
-//  Created by Louis Farmer on 1/27/24.
-//
-
 import Foundation
 import SwiftUI
 

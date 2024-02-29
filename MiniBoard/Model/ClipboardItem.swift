@@ -1,10 +1,3 @@
-//
-//  ClipboardText.swift
-//  MiniBoard
-//
-//  Created by Louis Farmer on 1/24/24.
-//
-
 import SwiftUI
 import SwiftData
 

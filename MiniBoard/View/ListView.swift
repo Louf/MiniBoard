@@ -1,10 +1,3 @@
-//
-//  ListView.swift
-//  MiniBoard
-//
-//  Created by Louis Farmer on 1/24/24.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -70,9 +63,11 @@ struct ListView: View {
                         //Now we are going to be able to check what we copied, image, file etc.
                         if let pb = output.object as? NSPasteboard {
                             if let str = pb.string(forType: .string) {
-                                print(str)
-                                //No image needed in this place
-                                addItem(text: str)
+                                if let lastItem = allItems.first, lastItem.text == str {
+                                    print("Duplicate text, not adding.")
+                                } else {
+                                    addItem(text: str)
+                                }
                             } // Handle images
                             else if let image = pb.readObjects(forClasses: [NSImage.self], options: nil)?.first as? NSImage {
                                 print("Image received")
@@ -83,9 +78,13 @@ struct ListView: View {
                             // Handle file URLs
                             else if let fileUrls = pb.readObjects(forClasses: [NSURL.self], options: nil) as? [URL], !fileUrls.isEmpty {
                                 for url in fileUrls {
+                                    // The `url` variable here is a `URL` object that represents the file URL.
+                                    // To get the file path as a string, you can use the `path` property of the `URL` object.
+                                    let filePath = url.path // This gives you the complete file path as a string.
                                     print("File URL: \(url)")
-                                    // Process each file URL here
-                                    // For example, you can add them to an array or use them in your app
+                                    print("File Path: \(filePath)")
+
+                                    addItem(text: filePath)
                                 }
                             }
                             else {

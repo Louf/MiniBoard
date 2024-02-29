@@ -1,10 +1,3 @@
-//
-//  TextType.swift
-//  MiniBoard
-//
-//  Created by Louis Farmer on 2/15/24.
-//
-
 import Foundation
 import SwiftUI
 

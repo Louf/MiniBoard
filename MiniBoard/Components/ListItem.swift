@@ -1,10 +1,3 @@
-//
-//  ListItem.swift
-//  MiniBoard
-//
-//  Created by Louis Farmer on 1/25/24.
-//
-
 import SwiftUI
 
 struct ListItem: View {
